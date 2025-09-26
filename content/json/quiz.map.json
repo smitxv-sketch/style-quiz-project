@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "steps": [
+    { "key": "metal_bg", "title": "На каком фоне кожа выглядит здоровее?", "variants": ["gold", "silver", "both"], "weight": 0.5 },
+    { "key": "neutrals_pair", "title": "В каком наборе лицо не меркнет?", "variants": ["warm", "cool", "both"], "weight": 0.7 },
+    { "key": "contrast_pair", "title": "Какой набор приятнее глазу?", "variants": ["high", "low", "both"], "weight": 0.7 },
+    { "key": "skin_depth", "title": "Что ближе к тону кожи сейчас?", "variants": ["light", "medium", "dark"], "weight": 1.0 },
+    { "key": "hair_tone", "title": "Цвет волос", "scale": [1, 5], "weight": 0.5 },
+    { "key": "eye_tone", "title": "Цвет глаз", "scale": [1, 5], "weight": 0.5 },
+    { "key": "height_band", "title": "Рост", "variants": ["short", "avg", "tall"], "weight": 1.0 },
+    { "key": "shape", "title": "Фигура", "variants": ["straight", "V", "A", "balanced"], "weight": 1.0 },
+    { "key": "practical", "title": "Что важнее?", "multi": ["stain_resist", "comfort", "waterproof", "low_maintenance"], "weight": 0.0 }
+  ],
+  "scoring": {
+    "warmth_from": {
+      "metal_bg": { "gold": 1, "silver": -1, "both": 0 },
+      "neutrals_pair": { "warm": 1, "cool": -1, "both": 0 }
+    },
+    "contrast_from": {
+      "contrast_pair": { "high": 1, "low": -1, "both": 0 },
+      "hair_tone": "scale",
+      "eye_tone": "scale"
+    },
+    "depth_from": "skin_depth",
+    "thresholds": {
+      "warm": 0.25,
+      "cool": -0.25,
+      "contrast_high": 0.67,
+      "contrast_low": 0.33
+    }
+  },
+  "output": ["warmth", "contrast", "depth", "height_band", "shape", "flags"]
+}

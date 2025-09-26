@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "batch": "mid_mannequins_demo",
+  "jobs": [
+    {
+      "template_id": "man_m_avg_balanced_mid",
+      "profile_code": "M_AVG_BAL_WARM_MED",
+      "card_id": "m_daily_01_warm_neuL",
+      "file_name": "previews/M_AVG_BAL_WARM_MED__m_daily_01_warm_neuL.webp"
+    },
+    {
+      "template_id": "man_f_avg_balanced_mid",
+      "profile_code": "F_AVG_BAL_NEU_MED",
+      "card_id": "f_daily_01_warm",
+      "file_name": "previews/F_AVG_BAL_NEU_MED__f_daily_01_warm.webp"
+    }
+  ]
+}

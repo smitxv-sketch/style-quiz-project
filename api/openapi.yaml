@@ -1,0 +1,168 @@
+openapi: 3.0.3
+info:
+  title: StyleQuiz API
+  version: 1.0.0
+servers:
+  - url: https://your-domain/api
+paths:
+  /healthz:
+    get:
+      summary: Liveness probe
+      responses: { '200': { description: OK } }
+
+  /profile/save:
+    post:
+      summary: Save anonymous profile and computed code
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [profile, profile_code]
+              properties:
+                quiz_answers: { type: object, additionalProperties: true }
+                profile:
+                  type: object
+                  properties:
+                    warmth: { type: string, enum: [warm, neutral, cool] }
+                    contrast: { type: string, enum: [low, medium, high] }
+                    depth: { type: string, enum: [light, medium, dark] }
+                    height_band: { type: string, enum: [short, avg, tall] }
+                    shape: { type: string, enum: [straight, V, A, balanced] }
+                    flags:
+                      type: array
+                      items: { type: string, enum: [stain_resist, comfort, waterproof, low_maintenance] }
+                profile_code: { type: string }
+      responses:
+        '200':
+          description: Saved
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  profile_id: { type: string }
+                  profile_code: { type: string }
+        '400': { description: Invalid payload }
+
+  /presets/list:
+    get:
+      summary: Get recommended card ids for profile
+      parameters:
+        - in: query
+          name: profile_code
+          required: true
+          schema: { type: string }
+        - in: query
+          name: context
+          required: true
+          schema: { type: string, enum: [daily, work, event] }
+        - in: query
+          name: season
+          schema: { type: string, enum: [mid, winter, summer], default: mid }
+        - in: query
+          name: limit
+          schema: { type: integer, default: 12, minimum: 1, maximum: 24 }
+      responses:
+        '200':
+          description: Cards list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  cards:
+                    type: array
+                    items: { type: string }
+        '400': { description: Invalid params }
+
+  /preview/request:
+    post:
+      summary: Request mannequin preview for card and profile type
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [profile_code, card_id]
+              properties:
+                profile_code: { type: string }
+                card_id: { type: string }
+      responses:
+        '200':
+          description: Task accepted
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  task_id: { type: string }
+                  status: { type: string, enum: [queued, processing, ready, error] }
+                  preview_url: { type: string, nullable: true }
+
+  /preview/status/{task_id}:
+    get:
+      summary: Poll preview task status
+      parameters:
+        - in: path
+          name: task_id
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status: { type: string, enum: [queued, processing, ready, error] }
+                  preview_url: { type: string, nullable: true }
+
+  /export:
+    post:
+      summary: Export selected cards
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [card_ids, format]
+              properties:
+                card_ids:
+                  type: array
+                  items: { type: string }
+                format: { type: string, enum: [text, pdf], default: text }
+      responses:
+        '200':
+          description: Export ready
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  url: { type: string, nullable: true }
+                  text: { type: string, nullable: true }
+
+  /billing/checkout:
+    post:
+      summary: Start Pro checkout
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  checkout_url: { type: string }
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+security:
+  - ApiKeyAuth: []

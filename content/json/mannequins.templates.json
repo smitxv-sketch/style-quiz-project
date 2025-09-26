@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "templates": [
+    {
+      "id": "man_m_avg_balanced_mid",
+      "gender": "male",
+      "season": "mid",
+      "height_band": "avg",
+      "shape": "balanced",
+      "skin_tone": "medium_warm",
+      "hair_color": "dark_brown",
+      "ratio": "3:4",
+      "width": 1200,
+      "height": 1600,
+      "prompt": "full-height synthetic mannequin male, {{skin_tone}}, {{hair_color}} short hair, {{shape}} proportions, neutral studio, soft light, no logos; wearing: {{items}}"
+    },
+    {
+      "id": "man_f_avg_balanced_mid",
+      "gender": "female",
+      "season": "mid",
+      "height_band": "avg",
+      "shape": "balanced",
+      "skin_tone": "medium_neutral",
+      "hair_color": "medium_brown",
+      "ratio": "3:4",
+      "width": 1200,
+      "height": 1600,
+      "prompt": "full-height synthetic mannequin female, {{skin_tone}}, {{hair_color}} shoulder-length, {{shape}} proportions, neutral studio, soft light, no logos; wearing: {{items}}"
+    }
+  ]
+}
