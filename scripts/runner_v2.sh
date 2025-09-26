@@ -4,8 +4,8 @@ set -euo pipefail
 MANIFEST="$1"               # path to manifest json
 OUT_DIR="$2"                # output base dir, e.g., /srv/stylegen/output
 LOG="${3:-/srv/stylegen/logs/run_$(date +%F_%H%M).log}"
-API_URL="${API_URL:-https://api.nanobanana.ai/generate}"
-API_TOKEN="${NANOBANANA_TOKEN:?Missing token}"
+API_URL="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent"
+GEMINI_API_KEY=""
 
 mkdir -p "$OUT_DIR" "$(dirname "$LOG")"
 
@@ -31,10 +31,15 @@ if [[ "$jq_type" == "flatlay" ]]; then
     out="$OUT_DIR/$file"
     mkdir -p "$(dirname "$out")"
     echo "Render $file" | tee -a "$LOG"
-    retry curl -sS -X POST "$API_URL" \
-      -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json" \
-      -d "{\"prompt\":\"$prompt\",\"width\":$width,\"height\":$height,\"format\":\"webp\"}" \
-      --output "$out"
+
+
+
+retry curl -sS -k -X POST "$API_URL" \
+  -H "x-goog-api-key: $GEMINI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{ "contents": [ { "parts": [ { "text": "'"$prompt"'" } ] } ] }' \
+  --output "$out"
+
   done
 elif [[ "$jq_type" == "mannequin" ]]; then
   # Need cards.json and templates

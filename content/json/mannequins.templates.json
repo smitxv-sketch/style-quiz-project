@@ -26,6 +26,34 @@
       "width": 1200,
       "height": 1600,
       "prompt": "full-height synthetic mannequin female, {{skin_tone}}, {{hair_color}} shoulder-length, {{shape}} proportions, neutral studio, soft light, no logos; wearing: {{items}}"
+    },
+    {
+      "id": "man_m_short_straight",
+      "gender": "male", "season": "mid", "height_band": "short", "shape": "straight",
+      "skin_tone": "light_neutral", "hair_color": "light_brown",
+      "ratio": "3:4", "width": 1200, "height": 1600,
+      "prompt": "full-height synthetic mannequin male, short stature, {{skin_tone}}, {{hair_color}} short hair, {{shape}} proportions, neutral studio, soft light, no logos; wearing: {{items}}"
+    },
+    {
+      "id": "man_m_tall_V",
+      "gender": "male", "season": "mid", "height_band": "tall", "shape": "V",
+      "skin_tone": "dark_warm", "hair_color": "black",
+      "ratio": "3:4", "width": 1200, "height": 1600,
+      "prompt": "full-height synthetic mannequin male, tall stature, {{skin_tone}}, {{hair_color}} short hair, {{shape}} proportions, neutral studio, soft light, no logos; wearing: {{items}}"
+    },
+    {
+      "id": "man_f_short_A",
+      "gender": "female", "season": "mid", "height_band": "short", "shape": "A",
+      "skin_tone": "light_warm", "hair_color": "blonde",
+      "ratio": "3:4", "width": 1200, "height": 1600,
+      "prompt": "full-height synthetic mannequin female, short stature, {{skin_tone}}, {{hair_color}} bob hair, {{shape}} proportions, neutral studio, soft light, no logos; wearing: {{items}}"
+    },
+    {
+      "id": "man_f_tall_V",
+      "gender": "female", "season": "mid", "height_band": "tall", "shape": "V",
+      "skin_tone": "dark_neutral", "hair_color": "dark_brown",
+      "ratio": "3:4", "width": 1200, "height": 1600,
+      "prompt": "full-height synthetic mannequin female, tall stature, {{skin_tone}}, {{hair_color}} long hair, {{shape}} proportions, neutral studio, soft light, no logos; wearing: {{items}}"
     }
   ]
 }

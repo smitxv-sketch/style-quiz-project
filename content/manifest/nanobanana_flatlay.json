@@ -1,41 +1,46 @@
 {
   "version": "1.0.0",
-  "batch": "mid_season_12cards",
+  "batch": "mid_season_18_cards",
   "images": [
     {"card_id":"m_daily_01_warm_neuL","file_name":"mid/male/daily/m_daily_01_warm_neuL_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay outfit, warm autumn palette: leather sneakers tobacco, indigo jeans straight, cream tee, mid-blue denim jacket, tobacco leather belt; neutral studio background, soft top light, high detail, no logos"},
     {"card_id":"m_daily_01_warm_neuL","file_name":"mid/male/daily/m_daily_01_warm_neuL_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay outfit same as base plus graphite waxed cotton jacket; neutral studio, soft light, no logos"},
-
     {"card_id":"m_daily_02_neu_dark","file_name":"mid/male/daily/m_daily_02_neu_dark_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay: dark leather sneakers, black jeans, warm neutral flannel shirt, dark cotton jacket; neutral background, soft light, no logos"},
     {"card_id":"m_daily_02_neu_dark","file_name":"mid/male/daily/m_daily_02_neu_dark_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay same items plus dark overshirt wool-blend; neutral studio, soft light, no logos"},
-
     {"card_id":"m_daily_03_neu_light","file_name":"mid/male/daily/m_daily_03_neu_light_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay: brown leather shoes, olive chinos, cream long-sleeve tee, camel merino cardigan; neutral studio, soft top light, no logos"},
     {"card_id":"m_daily_03_neu_light","file_name":"mid/male/daily/m_daily_03_neu_light_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same items with light camel coat folded on top; neutral studio, soft light, no logos"},
-
     {"card_id":"m_daily_04_waterproof","file_name":"mid/male/daily/m_daily_04_waterproof_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay: waterproof dark leather boots, indigo jeans, cream tee, graphite waxed cotton jacket; neutral studio, soft light, no logos"},
     {"card_id":"m_daily_04_waterproof","file_name":"mid/male/daily/m_daily_04_waterproof_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same items with jacket emphasized as outer layer; neutral studio, soft light, no logos"},
-
     {"card_id":"m_work_01_neuL","file_name":"mid/male/work/m_work_01_neuL_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"smart-casual flat-lay: dark sneakers, graphite chinos, beige oxford shirt, camel merino cardigan; neutral studio, soft top light, no logos"},
     {"card_id":"m_work_01_neuL","file_name":"mid/male/work/m_work_01_neuL_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same set plus unstructured charcoal blazer; neutral studio, soft light, no logos"},
-
     {"card_id":"m_work_02_warm","file_name":"mid/male/work/m_work_02_warm_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"smart-casual flat-lay: dark shoes, tobacco chinos, cream oxford shirt, charcoal soft blazer; neutral studio, soft light, no logos"},
     {"card_id":"m_work_02_warm","file_name":"mid/male/work/m_work_02_warm_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same set with blazer as highlighted outer layer; neutral studio, soft light, no logos"},
-
+    {"card_id":"m_work_03_neu_dark","file_name":"mid/male/work/m_work_03_neu_dark_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"smart-casual flat-lay: dark derby shoes, graphite wool trousers, beige merino turtleneck, charcoal unstructured blazer; neutral studio, soft light, no logos"},
+    {"card_id":"m_work_03_neu_dark","file_name":"mid/male/work/m_work_03_neu_dark_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same set with blazer emphasized; neutral studio, soft light, no logos"},
+    {"card_id":"m_daily_05_warm_hoodie","file_name":"mid/male/daily/m_daily_05_warm_hoodie_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay: tobacco leather sneakers, indigo jeans, cream hoodie, charcoal bomber jacket; neutral studio, soft light, no logos"},
+    {"card_id":"m_daily_05_warm_hoodie","file_name":"mid/male/daily/m_daily_05_warm_hoodie_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same set with bomber jacket emphasized; neutral studio, soft light, no logos"},
+    {"card_id":"m_daily_06_cool_overshirt","file_name":"mid/male/daily/m_daily_06_cool_overshirt_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay: dark sneakers, graphite chinos, light oxford shirt, grey wool overshirt; neutral studio, soft light, no logos"},
+    {"card_id":"m_daily_06_cool_overshirt","file_name":"mid/male/daily/m_daily_06_cool_overshirt_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same set with overshirt emphasized; neutral studio, soft light, no logos"},
     {"card_id":"f_daily_01_warm","file_name":"mid/female/daily/f_daily_01_warm_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay outfit, warm palette: leather sneakers tobacco, indigo straight jeans, cream tee, mid-blue denim jacket, tobacco leather belt; neutral clean background, soft light, no logos"},
     {"card_id":"f_daily_01_warm","file_name":"mid/female/daily/f_daily_01_warm_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same as base plus camel trench coat neatly folded; neutral studio, soft light, no logos"},
-
     {"card_id":"f_daily_02_skirtA","file_name":"mid/female/daily/f_daily_02_skirtA_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay: low-heel brown shoes, A-line midi skirt neutral gray wool-blend, cream merino jumper, camel trench belt visible; neutral studio, soft light, no logos"},
     {"card_id":"f_daily_02_skirtA","file_name":"mid/female/daily/f_daily_02_skirtA_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same items with trench coat layered on top; neutral studio, soft light, no logos"},
-
     {"card_id":"f_daily_03_shirtdress","file_name":"mid/female/daily/f_daily_03_shirtdress_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay: dark leather shoes, olive midi shirt-dress, camel merino cardigan; neutral studio, soft light, no logos"},
     {"card_id":"f_daily_03_shirtdress","file_name":"mid/female/daily/f_daily_03_shirtdress_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same items with trench coat folded; neutral studio, soft light, no logos"},
-
     {"card_id":"f_work_01_neu_dark","file_name":"mid/female/work/f_work_01_neu_dark_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"smart-casual flat-lay: dark leather shoes, graphite straight midi skirt wool-blend, light cream blouse, matching graphite wool coat folded; neutral background, soft light, no logos"},
     {"card_id":"f_work_01_neu_dark","file_name":"mid/female/work/f_work_01_neu_dark_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same set with coat emphasized; neutral studio, soft light, no logos"},
-
     {"card_id":"f_work_02_neu_light","file_name":"mid/female/work/f_work_02_neu_light_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"smart-casual flat-lay: dark shoes, graphite trousers, light cream blouse, charcoal soft blazer; neutral studio, soft light, no logos"},
     {"card_id":"f_work_02_neu_light","file_name":"mid/female/work/f_work_02_neu_light_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same set with blazer emphasized; neutral studio, soft light, no logos"},
-
     {"card_id":"f_daily_04_waterproof","file_name":"mid/female/daily/f_daily_04_waterproof_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay: waterproof dark leather boots, indigo jeans, cream tee, graphite parka; neutral studio, soft light, no logos"},
-    {"card_id":"f_daily_04_waterproof","file_name":"mid/female/daily/f_daily_04_waterproof_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same items with parka emphasized as outer layer; neutral studio, soft light, no logos"}
+    {"card_id":"f_daily_04_waterproof","file_name":"mid/female/daily/f_daily_04_waterproof_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same items with parka emphasized as outer layer; neutral studio, soft light, no logos"},
+    {"card_id":"f_work_03_warm_pleats","file_name":"mid/female/work/f_work_03_warm_pleats_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay: brown leather boots, warm pleated midi skirt, cream merino sweater, camel wool coat; neutral studio, soft light, no logos"},
+    {"card_id":"f_work_03_warm_pleats","file_name":"mid/female/work/f_work_03_warm_pleats_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same set with coat emphasized; neutral studio, soft light, no logos"},
+    {"card_id":"f_daily_05_cool_straight","file_name":"mid/female/daily/f_daily_05_cool_straight_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay: dark boots, black straight jeans, neutral flannel shirt, short charcoal coat; neutral studio, soft light, no logos"},
+    {"card_id":"f_daily_05_cool_straight","file_name":"mid/female/daily/f_daily_05_cool_straight_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same set with coat emphasized; neutral studio, soft light, no logos"},
+    {"card_id":"f_work_04_neutral_dress","file_name":"mid/female/work/f_work_04_neutral_dress_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"flat-lay: high brown boots, grey knit midi dress, camel trench coat; neutral studio, soft light, no logos"},
+    {"card_id":"f_work_04_neutral_dress","file_name":"mid/female/work/f_work_04_neutral_dress_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same set with trench coat emphasized; neutral studio, soft light, no logos"},
+    {"card_id":"m_daily_winter_01","file_name":"winter/male/daily/m_daily_winter_01_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"winter flat-lay: dark winter boots, indigo jeans, charcoal wool sweater; neutral studio, soft light, no logos"},
+    {"card_id":"m_daily_winter_01","file_name":"winter/male/daily/m_daily_winter_01_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same winter set plus a dark, warm parka; neutral studio, soft light, no logos"},
+    {"card_id":"f_daily_winter_01","file_name":"winter/female/daily/f_daily_winter_01_base.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"cozy winter flat-lay: brown winter boots, grey wool trousers, cream cashmere sweater; neutral studio, soft light, no logos"},
+    {"card_id":"f_daily_winter_01","file_name":"winter/female/daily/f_daily_winter_01_outer.webp","ratio":"3:4","width":1200,"height":1600,"prompt":"same cozy winter set plus a warm camel wool coat; neutral studio, soft light, no logos"}
   ]
 }

@@ -5,5 +5,13 @@
 
   { "code": "F_SHORT_A_WARM_LOW", "gender": "female", "height_band": "short", "shape": "A", "warmth": "warm", "contrast": "low", "depth": "light", "preview_template_id": "man_f_short_A" },
   { "code": "F_AVG_BAL_NEU_MED", "gender": "female", "height_band": "avg", "shape": "balanced", "warmth": "neutral", "contrast": "medium", "depth": "medium", "preview_template_id": "man_f_avg_balanced" },
-  { "code": "F_TALL_V_NEU_HIGH", "gender": "female", "height_band": "tall", "shape": "V", "warmth": "neutral", "contrast": "high", "depth": "dark", "preview_template_id": "man_f_tall_V" }
+  { "code": "F_TALL_V_NEU_HIGH", "gender": "female", "height_band": "tall", "shape": "V", "warmth": "neutral", "contrast": "high", "depth": "dark", "preview_template_id": "man_f_tall_V" },
+
+  { "code": "M_AVG_STRAIGHT_NEU_MED", "gender": "male", "height_band": "avg", "shape": "straight", "warmth": "neutral", "contrast": "medium", "depth": "medium", "preview_template_id": "man_m_avg_straight" },
+  { "code": "M_AVG_A_WARM_LOW", "gender": "male", "height_band": "avg", "shape": "A", "warmth": "warm", "contrast": "low", "depth": "light", "preview_template_id": "man_m_avg_A" },
+  { "code": "M_TALL_BAL_COOL_HIGH", "gender": "male", "height_band": "tall", "shape": "balanced", "warmth": "cool", "contrast": "high", "depth": "dark", "preview_template_id": "man_m_tall_balanced" },
+
+  { "code": "F_AVG_STRAIGHT_WARM_MED", "gender": "female", "height_band": "avg", "shape": "straight", "warmth": "warm", "contrast": "medium", "depth": "medium", "preview_template_id": "man_f_avg_straight" },
+  { "code": "F_SHORT_BAL_NEU_LOW", "gender": "female", "height_band": "short", "shape": "balanced", "warmth": "neutral", "contrast": "low", "depth": "light", "preview_template_id": "man_f_short_balanced" },
+  { "code": "F_TALL_A_COOL_HIGH", "gender": "female", "height_band": "tall", "shape": "A", "warmth": "cool", "contrast": "high", "depth": "dark", "preview_template_id": "man_f_tall_A" }
 ]
